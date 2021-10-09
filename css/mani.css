@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f69522;
+}
+
+@font-face {
+    font-family: Eng;
+    src: url('/res/TGL_0-1451Eng.ttf') format('truetype');
+}
+
+.b{
+    font-family: Eng;
+    z-index: -100;
+    background: url("/res/pattern-f.png") repeat ;
+    background-size: 500px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.text{
+    font-size: 26px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
