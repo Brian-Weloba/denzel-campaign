@@ -17,7 +17,7 @@ body {
     top: 0;
     background-color: #f69522;
     box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, .1);
-    font-family: Eng;
+    font-family: Eng, sans-serif;
     justify-content: end;
     display: flex;
     flex-direction: row;
