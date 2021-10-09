@@ -1,25 +1,237 @@
 body {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     background-color: #7f0525;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
 
+.navbar {
+    padding: 5px;
+    height: fit-content;
+    width: 100vw;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: #f69522;
+    box-shadow: -5px 5px 5px 0 rgba(0, 0, 0, .1);
+    font-family: Eng;
+    justify-content: end;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #7f0525;
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: 20px;
+
+}
+
+.backdrop {
+    z-index: -100;
+    background: url("/res/300ppi/pattern.png") repeat;
+    background-size: 500px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: Eng;
+    src: url('/res/TGL_0-1451Eng.ttf') format('truetype');
+}
+
+.cuea-logo {
+    height: 72px;
+}
+
 .circle {
     height: 80vw;
     width: 80vw;
-    right:-20vw;
-    top:-35vw;
+    right: -20vw;
+    top: -35vw;
     position: absolute;
     background-color: #f69522;
     border-radius: 50%;
-    box-shadow: -5px 10px 10px 0 rgba(0,0,0,.2);
+    box-shadow: -5px 10px 10px 0 rgba(0, 0, 0, .2);
 }
 
-.circle-text{
+.circle-text img {
+    font-family: Eng, sans-serif;
     color: #000000;
     position: absolute;
-    top:50%;
-    left: 50%;
+    height: 70vh;
+    top: 50%;
+    left: 30%;
 }
+
+.image {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image img {
+    position: absolute;
+    left: -10vw;
+    top: -20vh;
+    height: 200vh;
+    z-index: 2;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -5px;
+}
+
+.bgTop {
+    z-index: 1;
+    opacity: 1;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move_wave 13s linear infinite;
+    -webkit-animation: move_wave 13s linear infinite;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+.mobile{
+    display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width: 768px) {
+    .circle {
+        display: none;
+    }
+
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image{
+        left: -10rem;
+    }
+
+    .mobile {
+        display: block;
+        width: 100vw;
+        top: -40px;
+        background: #fe8101;
+        position: relative;
+        justify-items: center;
+    }
+
+    .mobile-img{
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1200px) {
+    /* Styles */
+    .circle {
+        height: 80vw;
+        width: 80vw;
+        right: -20vw;
+        top: -25vw;
+    }
+
+    .circle-text img {
+        height: 70vh;
+        top: 40%;
+        left: 30%;
+    }
+
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    /* Styles */
+}
+
+
