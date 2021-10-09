@@ -7,13 +7,13 @@ body{
 
 @font-face {
     font-family: Eng;
-    src: url('/res/TGL_0-1451Eng.ttf') format('truetype');
+    src: url('../res/TGL_0-1451Eng.ttf') format('truetype');
 }
 
 .b{
     font-family: Eng, sans-serif;
     z-index: -100;
-    background: url("/res/pattern-f.png") repeat ;
+    background: url("../res/pattern-f.png") repeat ;
     background-size: 500px;
     width: 100vw;
     height: 100vh;

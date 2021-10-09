@@ -34,7 +34,7 @@ body {
 
 .backdrop {
     z-index: -100;
-    background: url("/res/300ppi/pattern.png") repeat;
+    background: url("../res/300ppi/pattern.png") repeat;
     background-size: 500px;
     height: 100vh;
     width: 100vw;
@@ -43,7 +43,7 @@ body {
 
 @font-face {
     font-family: Eng;
-    src: url('/res/TGL_0-1451Eng.ttf') format('truetype');
+    src: url('../res/TGL_0-1451Eng.ttf') format('truetype');
 }
 
 .cuea-logo {
