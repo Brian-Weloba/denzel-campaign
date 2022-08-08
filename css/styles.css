@@ -160,7 +160,8 @@ body {
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
 
@@ -178,7 +179,7 @@ and (max-width: 768px) {
         flex-direction: column;
     }
 
-    .image{
+    .image {
         left: -10rem;
     }
 
@@ -191,7 +192,7 @@ and (max-width: 768px) {
         justify-items: center;
     }
 
-    .mobile-img{
+    .mobile-img {
         width: 80%;
         display: block;
         margin-left: auto;
@@ -217,7 +218,6 @@ and (max-width: 1200px) {
         top: 40%;
         left: 30%;
     }
-
 
 
 }

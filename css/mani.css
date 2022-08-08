@@ -1,4 +1,4 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,17 +10,17 @@ body{
     src: url('../res/TGL_0-1451Eng.ttf') format('truetype');
 }
 
-.b{
+.b {
     font-family: Eng, sans-serif;
     z-index: -100;
-    background: url("../res/pattern-f.png") repeat ;
+    background: url("../res/pattern-f.png") repeat;
     background-size: 500px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
 
-.text{
+.text {
     font-size: 26px;
     width: 80%;
     display: block;
